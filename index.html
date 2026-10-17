@@ -205,6 +205,360 @@ footer{padding-block:28px;border-top:1px solid var(--line);color:var(--muted);fo
 </style>
 </head>
 <body>
-...
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M7 7l10 10M17 7L7 17"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol>
+  <symbol id="i-cart" viewBox="0 0 24 24"><path d="M4 5h2l2 10h10l2-7H7.2"/><circle cx="10" cy="19" r="1.2"/><circle cx="17" cy="19" r="1.2"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M5 5.5A1.5 1.5 0 0 1 6.5 4H19v15H6.5A1.5 1.5 0 0 0 5 20.5z"/><path d="M9 8h6M9 11.5h6"/></symbol>
+  <symbol id="i-box" viewBox="0 0 24 24"><path d="M4 8l8-4 8 4v8l-8 4-8-4z"/><path d="M4 8l8 4 8-4M12 12v8"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="9" r="3.2"/><path d="M3.5 19a5.5 5.5 0 0 1 11 0"/><path d="M15.5 6.2a3 3 0 0 1 0 5.6M17 14.2a5 5 0 0 1 3.5 4.8"/></symbol>
+  <symbol id="i-file" viewBox="0 0 24 24"><path d="M7 3.5h7l4 4v13H7z"/><path d="M14 3.5v4h4M10 12h5M10 15.5h5"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><rect x="7" y="3" width="10" height="18" rx="2.5"/><path d="M11 17.5h2"/></symbol>
+  <symbol id="i-wifi" viewBox="0 0 24 24"><path d="M4 9.5a12 12 0 0 1 16 0M7 12.8a7.5 7.5 0 0 1 10 0M10 16a3 3 0 0 1 4 0"/><circle cx="12" cy="19" r=".6"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="10" rx="2"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5"/></symbol>
+  <symbol id="i-code" viewBox="0 0 24 24"><path d="M9 7l-5 5 5 5M15 7l5 5-5 5"/></symbol>
+  <symbol id="i-server" viewBox="0 0 24 24"><rect x="4" y="4.5" width="16" height="6" rx="1.5"/><rect x="4" y="13.5" width="16" height="6" rx="1.5"/><path d="M8 7.5h.01M8 16.5h.01"/></symbol>
+  <symbol id="i-tool" viewBox="0 0 24 24"><path d="M14.5 5.5a4 4 0 0 0 4.9 4.9L11 18.8a2 2 0 0 1-2.8-2.8l8.4-8.4"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3.5" y="5.5" width="17" height="13" rx="2"/><path d="M4 7l8 6 8-6"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><path d="M5 19V9M11 19V5M17 19v-7"/></symbol>
+</svg>
+
+<header class="top">
+  <div class="wrap nav">
+    <a class="brand" href="#top">
+      <svg class="dot" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="var(--accent)"/><path d="M11 24V8h6.5a5 5 0 0 1 0 10H11M19 24h3.5" fill="none" stroke="var(--bg)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Pacific Edge Trading
+    </a>
+    <nav class="navlinks" aria-label="Main">
+      <a href="#pwa">What is a PWA</a>
+      <a href="#apps">What we build</a>
+      <a href="#process">How it works</a>
+      <a class="btn btn-main" href="#enquire">Get a proposal</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section>
+    <div class="wrap hero">
+      <div>
+        <span class="label">Custom web apps · Malaysia</span>
+        <h1>Simple apps for your business, built to run on any phone.</h1>
+        <p class="lede">Pacific Edge Trading builds progressive web apps (PWAs) for companies that want their own tool, without the cost and wait of app-store apps. Staff open a link, add it to their home screen, and start working.</p>
+        <div class="cta">
+          <a class="btn btn-main" href="#enquire">Tell us what you need <svg class="i"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn-line" href="#apps">See examples</a>
+        </div>
+      </div>
+      <div class="phone" aria-hidden="true">
+        <div class="notch"></div>
+        <div class="appbar"><svg class="ic" viewBox="0 0 32 32"><rect width="32" height="32" rx="8" fill="var(--accent)"/><path d="M11 24V8h6.5a5 5 0 0 1 0 10H11" fill="none" stroke="var(--bg)" stroke-width="2.6" stroke-linecap="round"/></svg>Your company app</div>
+        <div class="tile"><b><svg class="i"><use href="#i-clock"/></svg>Attendance</b><span>42 of 48 staff checked in</span><div class="bar"><i></i></div></div>
+        <div class="tile"><b><svg class="i"><use href="#i-cart"/></svg>Purchase requests</b><span>3 waiting for approval</span></div>
+        <div class="tile"><b><svg class="i"><use href="#i-box"/></svg>Assets</b><span>128 items tracked</span></div>
+        <div class="prompt"><svg class="i"><use href="#i-plus"/></svg>Add to home screen</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pwa" class="soft">
+    <div class="wrap">
+      <div class="head">
+        <span class="label">What is a PWA</span>
+        <h2>An app that lives on the web, but feels like an app.</h2>
+        <p class="lede">A progressive web app opens from a link and installs straight to the home screen. There's no app store, no approval wait, and every update reaches everyone instantly.</p>
+      </div>
+      <div class="compare">
+        <div class="col">
+          <h3>App-store app</h3>
+          <p class="tagline">Separate builds for iPhone and Android</p>
+          <ul>
+            <li><svg class="i" style="color:var(--muted)"><use href="#i-x"/></svg>Two codebases to build and maintain</li>
+            <li><svg class="i" style="color:var(--muted)"><use href="#i-x"/></svg>Store review before every update</li>
+            <li><svg class="i" style="color:var(--muted)"><use href="#i-x"/></svg>Staff must find and download it</li>
+            <li><svg class="i" style="color:var(--muted)"><use href="#i-x"/></svg>Higher cost and longer timeline</li>
+          </ul>
+        </div>
+        <div class="col pwa">
+          <h3>Progressive web app</h3>
+          <p class="tagline">One app for every device</p>
+          <ul>
+            <li><svg class="i" style="color:var(--ok)"><use href="#i-check"/></svg>Works on iPhone, Android and desktop</li>
+            <li><svg class="i" style="color:var(--ok)"><use href="#i-check"/></svg>Updates go live the moment we publish</li>
+            <li><svg class="i" style="color:var(--ok)"><use href="#i-check"/></svg>Share a link, tap "Add to home screen"</li>
+            <li><svg class="i" style="color:var(--ok)"><use href="#i-check"/></svg>Can keep working with a weak connection</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="apps">
+    <div class="wrap">
+      <div class="head">
+        <span class="label">What we build</span>
+        <h2>From a single-purpose tool to a full business system.</h2>
+        <p class="lede">Every app is built for your workflow. Here's the range, from simplest to most involved.</p>
+      </div>
+
+      <div class="tier">
+        <div class="tier-head">
+          <div class="scale"><i></i><i class="off"></i><i class="off"></i></div>
+          <h3>Everyday tools</h3>
+          <p>One job, done well. Quick to build and easy for staff to adopt.</p>
+        </div>
+        <ul class="apps">
+          <li><span class="ichip"><svg class="i"><use href="#i-clock"/></svg></span><b>Attendance & check-in</b><span>Clock in by phone, with location and daily reports.</span></li>
+          <li><span class="ichip"><svg class="i"><use href="#i-file"/></svg></span><b>Forms & inspections</b><span>Replace paper checklists with forms that save photos.</span></li>
+          <li><span class="ichip"><svg class="i"><use href="#i-box"/></svg></span><b>Asset register</b><span>Track equipment, locations and service dates.</span></li>
+          <li><span class="ichip"><svg class="i"><use href="#i-users"/></svg></span><b>Bookings</b><span>Rooms, vehicles or appointments with a shared calendar.</span></li>
+        </ul>
+      </div>
+
+      <div class="tier">
+        <div class="tier-head">
+          <div class="scale"><i></i><i></i><i class="off"></i></div>
+          <h3>Business workflows</h3>
+          <p>Several steps and roles, with approvals and records kept in one place.</p>
+        </div>
+        <ul class="apps">
+          <li class="wide"><span class="ichip"><svg class="i"><use href="#i-cart"/></svg></span><b>Procurement</b><span>Requests, approvals, quotes and purchase orders.</span>
+            <ol class="flow"><li>Request</li><li>Approve</li><li>Compare quotes</li><li>Issue PO</li><li>Receive</li></ol>
+          </li>
+          <li><span class="ichip"><svg class="i"><use href="#i-book"/></svg></span><b>Simple accounting</b><span>Invoices, expenses and monthly summaries.</span></li>
+          <li><span class="ichip"><svg class="i"><use href="#i-users"/></svg></span><b>Personnel tracking</b><span>Staff records, contracts, documents and expiry alerts.</span></li>
+        </ul>
+      </div>
+
+      <div class="tier">
+        <div class="tier-head">
+          <div class="scale"><i></i><i></i><i></i></div>
+          <h3>Platforms</h3>
+          <p>Apps with several user types, payments or live tracking.</p>
+        </div>
+        <ul class="apps">
+          <li><span class="ichip"><svg class="i"><use href="#i-chart"/></svg></span><b>Marketplaces</b><span>Buyers, sellers and commission handled automatically.</span></li>
+          <li><span class="ichip"><svg class="i"><use href="#i-phone"/></svg></span><b>Delivery & logistics</b><span>Bookings, driver tracking and proof of delivery.</span></li>
+          <li class="custom wide"><span class="ichip"><svg class="i"><use href="#i-plus"/></svg></span><b>Something else?</b><span>If your team does it on paper, in spreadsheets or over WhatsApp, it can probably become an app.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="example" class="soft">
+    <div class="wrap">
+      <div class="head">
+        <span class="label">Example projects</span>
+        <h2>Built for real operations.</h2>
+      </div>
+
+      <div class="ex">
+        <div class="ex-text">
+          <span class="ex-tag">Enterprise</span>
+          <h3 class="ex-h">Manpower Dashboard</h3>
+          <p class="lede">For a company supplying around 220 personnel to oil and gas operators: one place for staff, visas, contracts and payments.</p>
+          <ul class="ex-points">
+            <li><svg class="i"><use href="#i-check"/></svg><span><b>Expiry alerts</b> for visas and contracts before they lapse.</span></li>
+            <li><svg class="i"><use href="#i-check"/></svg><span><b>Payment tracking</b> per person and per client.</span></li>
+            <li><svg class="i"><use href="#i-check"/></svg><span><b>Instant overview</b> instead of scattered spreadsheets.</span></li>
+          </ul>
+        </div>
+        <div class="phone" aria-hidden="true">
+          <div class="notch"></div>
+          <div class="appbar">Manpower</div>
+          <div class="tile"><b><svg class="i"><use href="#i-users"/></svg>Active personnel</b><span>220 on assignment</span></div>
+          <div class="tile"><b><svg class="i"><use href="#i-file"/></svg>Visas expiring</b><span>5 in the next 30 days</span><div class="bar"><i></i></div></div>
+          <div class="tile"><b><svg class="i"><use href="#i-book"/></svg>Payments</b><span>This month's run ready</span></div>
+        </div>
+      </div>
+
+      <div class="ex ex-rev">
+        <div class="phone" aria-hidden="true">
+          <div class="notch"></div>
+          <div class="appbar">TenderHub</div>
+          <div class="tile"><b><svg class="i"><use href="#i-file"/></svg>New RFQ</b><span>Marine support services</span></div>
+          <div class="tile"><b><svg class="i"><use href="#i-users"/></svg>Bids received</b><span>4 suppliers responded</span><div class="bar"><i></i></div></div>
+          <div class="prompt"><svg class="i"><use href="#i-check"/></svg>Compare quotes</div>
+        </div>
+        <div class="ex-text">
+          <span class="ex-tag">Procurement</span>
+          <h3 class="ex-h">TenderHub</h3>
+          <p class="lede">A B2B procurement platform where buyers post requests for quotation and suppliers respond.</p>
+          <ol class="flow ex-flow"><li>Post RFQ</li><li>Suppliers bid</li><li>Compare</li><li>Award</li></ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="included">
+    <div class="wrap">
+      <div class="head">
+        <span class="label">What's included</span>
+        <h2>You own the app. We keep it running.</h2>
+      </div>
+      <div class="incl">
+        <div><span class="ichip"><svg class="i"><use href="#i-code"/></svg></span><div><h3>Full source code</h3><p>You receive the code and own the intellectual property.</p></div></div>
+        <div><span class="ichip"><svg class="i"><use href="#i-server"/></svg></span><div><h3>Hosting & backups</h3><p>We manage servers, database, monitoring and backups.</p></div></div>
+        <div><span class="ichip"><svg class="i"><use href="#i-lock"/></svg></span><div><h3>Secure sign-in</h3><p>User accounts and access by role.</p></div></div>
+        <div><span class="ichip"><svg class="i"><use href="#i-wifi"/></svg></span><div><h3>Works on weak signal</h3><p>Built to cope with patchy connections on site.</p></div></div>
+        <div><span class="ichip"><svg class="i"><use href="#i-tool"/></svg></span><div><h3>Ongoing support</h3><p>Monthly support packages for fixes, updates and security.</p></div></div>
+        <div><span class="ichip"><svg class="i"><use href="#i-plus"/></svg></span><div><h3>Room to grow</h3><p>New features can be added as your needs change.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="process" class="soft">
+    <div class="wrap">
+      <div class="head">
+        <span class="label">How it works</span>
+        <h2>From idea to app in four steps.</h2>
+      </div>
+      <div class="steps">
+        <div class="step"><span class="n">1</span><h3>Tell us the problem</h3><p>Fill in the short form below about your team and workflow.</p></div>
+        <div class="step"><span class="n">2</span><h3>Get a proposal</h3><p>We reply with scope, timeline and a fixed quote.</p></div>
+        <div class="step"><span class="n">3</span><h3>We build and test</h3><p>You see working versions along the way and give feedback.</p></div>
+        <div class="step"><span class="n">4</span><h3>Launch and support</h3><p>Your team installs it from a link. We keep it running.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="enquire">
+    <div class="wrap">
+      <div class="head">
+        <span class="label">Get a proposal</span>
+        <h2>Tell us what you need.</h2>
+        <p class="lede">Answer a few questions. We'll prepare an email for you to send, and reply with a proposal.</p>
+      </div>
+      <form class="qform" id="qform" novalidate>
+        <fieldset>
+          <legend><span class="fn">1</span>About you</legend>
+          <div class="fields">
+            <label>Your name<input name="name" required autocomplete="name"></label>
+            <label>Company<input name="company" required autocomplete="organization"></label>
+            <label>Email<input name="email" type="email" required autocomplete="email"></label>
+            <label>Phone / WhatsApp<input name="phone" type="tel" autocomplete="tel"></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend><span class="fn">2</span>The app</legend>
+          <div class="glabel">What kind of app?</div>
+          <div class="opts grid3">
+            <label class="opt"><input type="radio" name="type" value="Attendance">Attendance</label>
+            <label class="opt"><input type="radio" name="type" value="Procurement">Procurement</label>
+            <label class="opt"><input type="radio" name="type" value="Accounting">Accounting</label>
+            <label class="opt"><input type="radio" name="type" value="Asset management">Assets</label>
+            <label class="opt"><input type="radio" name="type" value="Personnel">Personnel</label>
+            <label class="opt"><input type="radio" name="type" value="Other">Other</label>
+          </div>
+          <label class="other-box" id="otherBox" hidden style="margin-top:12px">Describe it briefly<input name="other"></label>
+          <div class="fields" style="margin-top:18px">
+            <label>How many people will use it?
+              <select name="users"><option>1–10</option><option>11–50</option><option>51–200</option><option>200+</option></select>
+            </label>
+            <label>When do you need it?
+              <select name="timing"><option>Within 1 month</option><option>1–3 months</option><option>3+ months</option><option>Just exploring</option></select>
+            </label>
+            <label class="full">What should it do?<textarea name="details" placeholder="e.g. Staff submit purchase requests, managers approve, finance sees a monthly report."></textarea></label>
+          </div>
+        </fieldset>
+        <label class="consent"><input type="checkbox" name="consent" required>I agree to be contacted by Pacific Edge Trading about this enquiry.</label>
+        <div class="submit-row">
+          <button class="btn btn-main" type="submit">Prepare my enquiry <svg class="i"><use href="#i-arrow"/></svg></button>
+          <span class="err" id="err" hidden>Please fill in the highlighted fields.</span>
+        </div>
+      </form>
+      <div class="result" id="result" hidden>
+        <h3>Your enquiry is ready</h3>
+        <p>Send it to us by email, or copy it into WhatsApp or your own email.</p>
+        <pre id="summary"></pre>
+        <div class="cta" style="margin-top:0">
+          <a class="btn btn-main" id="sendMail" href="#">Open in email <svg class="i"><use href="#i-mail"/></svg></a>
+          <button class="btn btn-line" type="button" id="copySummary">Copy text</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="contact">
+        <span class="label" style="color:var(--bg)">Contact</span>
+        <h2>Prefer to just talk?</h2>
+        <p>Email us with a few lines about your business and we'll get back to you.</p>
+        <div class="mail">
+          <svg class="i"><use href="#i-mail"/></svg>
+          <code>info@pacificedgetrading.com</code>
+          <button type="button" id="copyMail">Copy</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span>© <span id="yr">2026</span> Pacific Edge Trading Sdn Bhd (202501031124)</span>
+    <a href="mailto:info@pacificedgetrading.com">info@pacificedgetrading.com</a>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var EMAIL = "info@pacificedgetrading.com";
+  var f = document.getElementById("qform");
+  var otherBox = document.getElementById("otherBox");
+  document.getElementById("yr").textContent = new Date().getFullYear();
+
+  f.addEventListener("change", function(e){
+    if (e.target.name === "type") otherBox.hidden = e.target.value !== "Other";
+  });
+
+  function copy(text, btn){
+    var done = function(){ var t = btn.textContent; btn.textContent = "Copied"; setTimeout(function(){ btn.textContent = t; }, 1500); };
+    if (navigator.clipboard) navigator.clipboard.writeText(text).then(done, function(){});
+  }
+  document.getElementById("copyMail").addEventListener("click", function(){ copy(EMAIL, this); });
+
+  f.addEventListener("submit", function(e){
+    e.preventDefault();
+    var ok = true;
+    f.querySelectorAll("[required]").forEach(function(el){
+      var bad = el.type === "checkbox" ? !el.checked : !el.value.trim() || (el.type === "email" && !/^\S+@\S+\.\S+$/.test(el.value));
+      el.classList.toggle("invalid", bad);
+      if (bad) ok = false;
+    });
+    document.getElementById("err").hidden = ok;
+    if (!ok) return;
+
+    var d = new FormData(f);
+    var type = d.get("type") || "Not specified";
+    if (type === "Other" && d.get("other")) type = "Other: " + d.get("other");
+    var text =
+      "Name: " + d.get("name") + "\n" +
+      "Company: " + d.get("company") + "\n" +
+      "Email: " + d.get("email") + "\n" +
+      "Phone: " + (d.get("phone") || "-") + "\n\n" +
+      "App type: " + type + "\n" +
+      "Users: " + d.get("users") + "\n" +
+      "Timing: " + d.get("timing") + "\n\n" +
+      "What it should do:\n" + (d.get("details") || "-");
+
+    document.getElementById("summary").textContent = text;
+    document.getElementById("sendMail").href = "mailto:" + EMAIL +
+      "?subject=" + encodeURIComponent("App enquiry from " + d.get("company")) +
+      "&body=" + encodeURIComponent(text);
+    var r = document.getElementById("result");
+    r.hidden = false;
+    r.scrollIntoView({behavior: "smooth", block: "start"});
+  });
+
+  document.getElementById("copySummary").addEventListener("click", function(){
+    copy(document.getElementById("summary").textContent, this);
+  });
+})();
+</script>
 </body>
 </html>
