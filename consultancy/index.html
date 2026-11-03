@@ -215,7 +215,7 @@ footer{padding-block:28px;border-top:1px solid var(--line);color:var(--muted);fo
       <a href="#cycle">Contracting cycle</a>
       <a href="#services">Services</a>
       <a href="/">App development</a>
-      <a class="btn btn-main" href="#contact">Contact us</a>
+      <a class="btn btn-main" href="#enquiry">Send enquiry</a>
     </nav>
   </div>
 </header>
@@ -228,7 +228,7 @@ footer{padding-block:28px;border-top:1px solid var(--line);color:var(--muted);fo
         <h1 style="font-size:clamp(2.1rem,5vw,3.4rem);font-weight:700;margin:6px 0 8px">Supply chain and contract management, from first need to close-out</h1>
         <p class="lede">From the first business need to the final contract close-out, we manage the complete supply chain process: planning and strategy, tendering and evaluation, negotiation and award, then performance, variations and close-out after award. Every stage is designed to deliver value, compliance and control.</p>
         <div class="cta">
-          <a class="btn btn-main" href="#contact">Discuss your requirement<svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn-main" href="#enquiry">Discuss your requirement<svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
           <a class="btn btn-line" href="#services">Our services</a>
         </div>
       </div>
@@ -281,13 +281,102 @@ footer{padding-block:28px;border-top:1px solid var(--line);color:var(--muted);fo
     </div>
   </section>
 
-  <section id="contact">
+  <section id="enquiry">
     <div class="wrap">
-      <div class="contact">
-        <p class="label" style="color:var(--accent-soft)">Contact</p>
-        <h2>Talk to us about your supply chain needs</h2>
-        <p>Email us a short description of your requirement and we'll get back to you to discuss scope and next steps.</p>
-        <div class="mail"><svg class="i" aria-hidden="true"><use href="#i-mail"/></svg><a href="mailto:info@pacificedgetrading.com?subject=Consultancy%20enquiry" style="color:inherit"><code id="mail">info@pacificedgetrading.com</code></a><button type="button" id="copyBtn">Copy email</button></div>
+      <div class="head">
+        <p class="label">Consultancy enquiry</p>
+        <h2>Tell us about your requirement</h2>
+        <p class="lede">Answer a few questions and we'll come back to you to discuss scope, approach and next steps. It takes about 3 minutes.</p>
+      </div>
+
+      <form id="qForm" class="qform" novalidate>
+        <fieldset>
+          <legend><span class="fn">1</span>About you</legend>
+          <div class="fields">
+            <label for="q_name">Full name *<input id="q_name" name="Full name" required autocomplete="name"></label>
+            <label for="q_title">Job title<input id="q_title" name="Job title" autocomplete="organization-title"></label>
+            <label for="q_company">Company name *<input id="q_company" name="Company" required autocomplete="organization"></label>
+            <label for="q_org">Organisation type<select id="q_org" name="Organisation type"><option value="">Select</option><option>Operator / asset owner</option><option>National oil company / government</option><option>Oil and gas service company</option><option>EPC or main contractor</option><option>Other</option></select></label>
+            <label for="q_email">Email *<input id="q_email" name="Email" type="email" required autocomplete="email"></label>
+            <label for="q_phone">Phone / WhatsApp *<input id="q_phone" name="Phone / WhatsApp" type="tel" required autocomplete="tel"></label>
+            <label for="q_country" class="full">Country *<input id="q_country" name="Country" required autocomplete="country-name" placeholder="e.g. Oman"></label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend><span class="fn">2</span>Your requirement</legend>
+          <div class="fields one">
+            <div class="group" role="group" aria-labelledby="q_stage_l">
+              <p class="glabel" id="q_stage_l">Which stages do you need support with? (tick all that apply)</p>
+              <div class="opts grid2">
+                <label class="opt"><input type="checkbox" name="Stages" value="Requirement planning">Requirement planning</label>
+                <label class="opt"><input type="checkbox" name="Stages" value="Sourcing strategy">Sourcing strategy</label>
+                <label class="opt"><input type="checkbox" name="Stages" value="Tendering">Tendering</label>
+                <label class="opt"><input type="checkbox" name="Stages" value="Evaluation">Evaluation</label>
+                <label class="opt"><input type="checkbox" name="Stages" value="Negotiation and award">Negotiation and award</label>
+                <label class="opt"><input type="checkbox" name="Stages" value="Post-award contract management">Post-award contract management</label>
+                <label class="opt"><input type="checkbox" name="Stages" value="Contract close-out">Contract close-out</label>
+                <label class="opt"><input type="checkbox" name="Stages" value="Full cycle, end to end">Full cycle, end to end</label>
+              </div>
+            </div>
+            <div class="group" role="group" aria-labelledby="q_svc_l">
+              <p class="glabel" id="q_svc_l">Type of support (tick all that apply)</p>
+              <div class="opts grid2">
+                <label class="opt"><input type="checkbox" name="Support type" value="Procurement and tendering">Procurement and tendering</label>
+                <label class="opt"><input type="checkbox" name="Support type" value="Contract management">Contract management</label>
+                <label class="opt"><input type="checkbox" name="Support type" value="Supplier management">Supplier management</label>
+                <label class="opt"><input type="checkbox" name="Support type" value="Process improvement">Process improvement</label>
+              </div>
+            </div>
+            <label for="q_scope">Briefly describe your requirement *<textarea id="q_scope" name="Requirement" required placeholder="e.g. We are preparing a tender for a 3-year services contract and need support with the sourcing strategy, bid evaluation and negotiation."></textarea></label>
+            <label for="q_cat">Category of goods or services involved<input id="q_cat" name="Category" placeholder="e.g. Drilling services, logistics, maintenance, materials"></label>
+            <label for="q_value">Estimated contract value<select id="q_value" name="Estimated contract value"><option value="">Select</option><option>Below USD 500,000</option><option>USD 500,000 – 2 million</option><option>USD 2 – 10 million</option><option>Above USD 10 million</option><option>Not sure / prefer not to say</option></select></label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend><span class="fn">3</span>Engagement and timing</legend>
+          <div class="fields">
+            <div class="group full" role="group" aria-labelledby="q_eng_l">
+              <p class="glabel" id="q_eng_l">Preferred engagement *</p>
+              <div class="opts">
+                <label class="opt"><input type="radio" name="Engagement" value="Project-based" required>Project-based</label>
+                <label class="opt"><input type="radio" name="Engagement" value="Call-off consultancy">Call-off consultancy</label>
+                <label class="opt"><input type="radio" name="Engagement" value="Short-term support">Short-term support</label>
+                <label class="opt"><input type="radio" name="Engagement" value="Not sure yet">Not sure yet</label>
+              </div>
+            </div>
+            <label for="q_start">When do you need support to start? *<select id="q_start" name="Start date" required><option value="">Select</option><option>Immediately</option><option>Within 1 month</option><option>1–3 months</option><option>More than 3 months</option><option>Just exploring</option></select></label>
+            <label for="q_dur">Expected duration<select id="q_dur" name="Expected duration"><option value="">Select</option><option>Less than 1 month</option><option>1–3 months</option><option>3–6 months</option><option>6–12 months</option><option>More than 12 months</option><option>Not sure yet</option></select></label>
+            <div class="group full" role="group" aria-labelledby="q_loc_l">
+              <p class="glabel" id="q_loc_l">Where would the work be done?</p>
+              <div class="opts">
+                <label class="opt"><input type="radio" name="Work location" value="Remote">Remote</label>
+                <label class="opt"><input type="radio" name="Work location" value="On-site">On-site</label>
+                <label class="opt"><input type="radio" name="Work location" value="Mix of remote and on-site">Mix of remote and on-site</label>
+              </div>
+            </div>
+            <label for="q_notes" class="full">Anything else we should know?<textarea id="q_notes" name="Other notes" placeholder="Deadlines, decision makers, tender dates, special requirements"></textarea></label>
+            <label class="consent full" for="q_ok"><input id="q_ok" type="checkbox" name="Consent" value="Agreed to be contacted" required>I agree that Pacific Edge Trading may contact me about this enquiry. *</label>
+          </div>
+        </fieldset>
+
+        <div class="submit-row">
+          <button class="btn btn-main" type="submit">Send my enquiry<svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+          <p class="err" id="qErr" role="alert" hidden></p>
+        </div>
+        <p style="color:var(--muted);font-size:.92rem">Prefer email? Write to <a href="mailto:info@pacificedgetrading.com?subject=Consultancy%20enquiry">info@pacificedgetrading.com</a>.</p>
+      </form>
+
+      <div class="result" id="qResult" hidden>
+        <h3 id="qTitle">Thank you. Your enquiry has been sent.</h3>
+        <p id="qMsg"></p>
+        <pre id="qSummary" tabindex="0"></pre>
+        <div class="cta">
+          <a class="btn btn-main" id="qMail" href="mailto:info@pacificedgetrading.com" hidden>Send by email<svg class="i" aria-hidden="true"><use href="#i-mail"/></svg></a>
+          <button class="btn btn-line" type="button" id="qCopy" hidden>Copy summary</button>
+          <button class="btn btn-line" type="button" id="qEdit">Edit answers</button>
+        </div>
       </div>
     </div>
   </section>
@@ -301,10 +390,68 @@ footer{padding-block:28px;border-top:1px solid var(--line);color:var(--muted);fo
 </footer>
 
 <script>
+(function(){
+  var f=document.getElementById('qForm'),err=document.getElementById('qErr'),res=document.getElementById('qResult'),out=document.getElementById('qSummary');
+  function labelOf(el){
+    var g=el.closest('.group'); if(g) return g.querySelector('.glabel').textContent.replace(/\s*\*$/,'').replace(/\s*\(tick.*\)$/,'');
+    var l=el.closest('label'); return l?l.firstChild.textContent.trim().replace(/\s*\*$/,''):el.name;
+  }
+  f.addEventListener('input',function(e){e.target.classList.remove('invalid')});
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var missing=[],first=null,seen={};
+    [].forEach.call(f.querySelectorAll('[required]'),function(el){
+      var ok;
+      if(el.type==='radio'){if(seen[el.name])return;seen[el.name]=1;ok=!!f.querySelector('input[name="'+el.name+'"]:checked')}
+      else if(el.type==='checkbox'){ok=el.checked}
+      else{ok=el.value.trim()!=='';if(ok&&el.type==='email')ok=/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(el.value.trim());el.classList.toggle('invalid',!ok)}
+      if(!ok){missing.push(el.type==='checkbox'?'consent':labelOf(el));first=first||el}
+    });
+    if(missing.length){err.hidden=false;err.textContent='Please complete: '+missing.join(', ')+'.';first.focus();return}
+    err.hidden=true;
+    var lines=['CONSULTANCY ENQUIRY – Pacific Edge Trading','Date: '+new Date().toLocaleDateString('en-GB'),''];
+    [].forEach.call(f.querySelectorAll('fieldset'),function(fs){
+      lines.push(fs.querySelector('legend').textContent.replace(/^\d/,'').trim().toUpperCase());
+      var done={};
+      [].forEach.call(fs.querySelectorAll('input,select,textarea'),function(el){
+        if(done[el.name]||el.name==='Consent'||el.closest('[hidden]'))return; done[el.name]=1;
+        var v;
+        if(el.type==='checkbox'||el.type==='radio'){v=[].map.call(fs.querySelectorAll('input[name="'+el.name+'"]:checked'),function(x){return x.value}).join(', ')}
+        else v=el.value.trim();
+        lines.push(el.name+': '+(v||'–'));
+      });
+      lines.push('');
+    });
+    out.textContent=lines.join('\n').trim();
+    var co=f.querySelector('[name="Company"]'),subj='Consultancy enquiry'+(co&&co.value.trim()?' – '+co.value.trim():'');
+    var href='mailto:info@pacificedgetrading.com?subject='+encodeURIComponent(subj)+'&body='+encodeURIComponent(out.textContent);
+    var mail=document.getElementById('qMail'),copy=document.getElementById('qCopy');
+    mail.href=href;
+    var sb=f.querySelector('[type="submit"]'),sbHtml=sb.innerHTML;
+    sb.disabled=true;sb.textContent='Sending…';
+    function show(ok){
+      sb.disabled=false;sb.innerHTML=sbHtml;
+      document.getElementById('qTitle').textContent=ok?'Thank you. Your enquiry has been sent.':'Almost done – please send your enquiry by email.';
+      document.getElementById('qMsg').innerHTML=ok
+        ?'We’ve received your enquiry at <b>info@pacificedgetrading.com</b>. We’ll review it and contact you to discuss your requirement and next steps. A copy of what you sent is below.'
+        :'We couldn’t send it automatically. Tap <b>Send by email</b> to open your email app with everything filled in, or copy the summary and email it to <b>info@pacificedgetrading.com</b>.';
+      mail.hidden=ok;copy.hidden=ok;
+      f.hidden=true;res.hidden=false;try{res.scrollIntoView({behavior:'smooth',block:'start'})}catch(x){}
+    }
+    var nm=f.querySelector('[name="Full name"]'),em=f.querySelector('[name="Email"]');
+    fetch('https://formsubmit.co/ajax/info@pacificedgetrading.com',{
+      method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},
+      body:JSON.stringify({_subject:subj,_template:'box',_captcha:'false',_replyto:em?em.value.trim():'',
+        Name:nm?nm.value.trim():'',Email:em?em.value.trim():'',Enquiry:out.textContent})
+    }).then(function(r){return r.json().then(function(j){show(r.ok&&String(j.success)==='true')})})
+      .catch(function(){show(false)});
+  });
+  document.getElementById('qEdit').addEventListener('click',function(){res.hidden=true;f.hidden=false;f.scrollIntoView({block:'start'})});
+  document.getElementById('qCopy').addEventListener('click',function(){
+    var b=this;
+    function sel(){var r=document.createRange();r.selectNodeContents(out);var s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Selected – copy it now'}
+    try{navigator.clipboard.writeText(out.textContent).then(function(){b.textContent='Copied'},sel)}catch(x){sel()}
+  });
+})();
 document.getElementById('yr').textContent=new Date().getFullYear();
-document.getElementById('copyBtn').addEventListener('click',function(){
-  var b=this,el=document.getElementById('mail');
-  function sel(){var r=document.createRange();r.selectNodeContents(el);var s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Selected'}
-  try{navigator.clipboard.writeText(el.textContent).then(function(){b.textContent='Copied'},sel)}catch(e){sel()}
-});
 </script>
